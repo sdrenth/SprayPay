@@ -52,6 +52,6 @@ $response = $client->chargebackrequest->getStatus(['reference' => 'SOME_REFERENC
 
 **Payment resource example**
 ```
-$payment = new Payment(client->loanrequest->create($data, true, true));
+$payment = new Payment($client->loanrequest->create($data, true, true));
 $payment->isPaid();
 ```
